@@ -1,0 +1,45 @@
+{
+  "name": "curculator",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "jest",
+    "build": "ts-node build && cp www/index.html dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivahaev/curculator.git"
+  },
+  "author": "ivahaev",
+  "bugs": {
+    "url": "https://github.com/ivahaev/curculator/issues"
+  },
+  "dependencies": {
+    "@types/classnames": "^2.3.1",
+    "classnames": "^2.3.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-redux": "^7.2.8",
+    "react-test-renderer": "^18.0.0",
+    "redux-thunk": "^2.4.1",
+    "swr": "^1.2.2"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "@babel/preset-typescript": "^7.16.7",
+    "@reduxjs/toolkit": "^1.8.1",
+    "@types/jest": "^27.4.0",
+    "@types/react": "^18.0.1",
+    "@types/react-dom": "^18.0.0",
+    "@types/react-redux": "^7.1.23",
+    "@types/react-test-renderer": "^17.0.1",
+    "babel": "^6.23.0",
+    "babel-jest": "^27.5.1",
+    "esbuild": "^0.14.31",
+    "jest": "^27.5.1",
+    "jest-fetch-mock": "^3.0.3",
+    "ts-jest": "^27.1.3",
+    "ts-node": "^10.5.0"
+  }
+}

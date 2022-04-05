@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "jsx": "preserve",
+    "lib": [
+      "esnext",
+      "DOM"
+    ],
+    "esModuleInterop": true
+  }
+}
