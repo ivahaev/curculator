@@ -1,0 +1,153 @@
+/* src/client/index.css */
+:root {
+  --font-size: 16px;
+  --font-family: Verdana, sans-serif;
+  --font-color: #000;
+  --button-bg: #2ea44f;
+  --button-border: #1bae45;
+}
+html {
+  min-height: 100%;
+  position: relative;
+}
+#app {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+}
+body {
+  background-color: snow;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  height: 100%;
+}
+button {
+  background-color: var(--button-bg);
+  font-size: var(--font-size);
+  font-family: var(--font-family);
+  font-weight: 300;
+  padding: 6px 16px;
+  border: 1px solid var(--button-border);
+  border-radius: 6px;
+  color: white;
+}
+button:disabled {
+  border-color: gray;
+  animation: button-loading 2s infinite;
+}
+@keyframes button-loading {
+  0% {
+    background-color: var(--button-bg);
+    border-color: var(--button-border);
+  }
+  70% {
+    background-color: #eee;
+    border-color: #eee;
+  }
+  100% {
+    background-color: var(--button-bg);
+    border-color: var(--button-border);
+  }
+}
+input,
+select {
+  background-color: snow;
+  font-size: var(--font-size);
+  padding: 4px;
+  border: solid gray;
+  border-width: 0 0 1px 0;
+  border-radius: 0;
+}
+input {
+  height: 20px;
+}
+input:focus {
+  outline: none;
+  border: solid #719ece;
+  border-width: 0 0 1px 0;
+}
+input:disabled {
+  color: gray;
+}
+th {
+  text-align: left;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: snow;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+table.loading {
+  animation: table-loading 2s infinite;
+}
+@keyframes table-loading {
+  0% {
+    color: var(--font-color);
+  }
+  50% {
+    color: #eee;
+  }
+  100% {
+    color: var(--font-color);
+  }
+}
+.c-pointer {
+  cursor: pointer;
+}
+.error {
+  color: red;
+  font-size: smaller;
+}
+.width640 {
+  width: 640px;
+}
+.width320 {
+  width: 320px;
+}
+.width100 {
+  width: 100px;
+}
+.p-r {
+  padding-right: 16px;
+}
+.p-t {
+  padding-top: 16px;
+}
+.p-t-md {
+  padding-top: 32px;
+}
+.p-t-lg {
+  padding-top: 64px;
+}
+.p-b {
+  padding-bottom: 16px;
+}
+.d-flex {
+  display: flex;
+}
+.flex-column {
+  flex-direction: column;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.align-center {
+  align-items: center;
+}
+.flex-grow-1 {
+  flex-grow: 1;
+}
+.flex-grow-0 {
+  flex-grow: 0;
+}
+.overflow-y-scroll {
+  overflow-y: scroll;
+}

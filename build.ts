@@ -4,7 +4,7 @@ esbuild
   .build({
     entryPoints: ["./src/client/app.tsx"],
     bundle: true,
-    outdir: "./dist/js",
+    outdir: "./docs/js",
   })
   .then(() => {
     console.log(`Build completed`);

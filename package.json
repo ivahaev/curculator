@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "test": "jest",
-    "build": "ts-node build && cp www/index.html dist"
+    "build": "ts-node build && cp www/index.html docs"
   },
   "repository": {
     "type": "git",
